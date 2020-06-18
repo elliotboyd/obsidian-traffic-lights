@@ -8,6 +8,7 @@
 /* _status_bar                         */
 /* _search_results_and_backlinks       */
 /* _tag_pane                           */
+/* _embeded                            */
 /* _scrollbar                          */
 /* _file_browser                       */
 /* _inputs                             */
@@ -42,6 +43,7 @@
   --font-line-height-side:              17px;
   --font-size:                          14.5px;
   --font-size-side:                     12.5px;
+  --font-size-header-titles:            13.5px;
   --font-size-h1:                       23px;
   --font-size-h2:                       22px;
   --font-size-h3:                       21px;
@@ -92,6 +94,7 @@
   --font-line-height-side:              17px;
   --font-size:                          14.5px;
   --font-size-side:                     12.5px;
+  --font-size-header-titles:            13.5px;
   --font-size-h1:                       23px;
   --font-size-h2:                       22px;
   --font-size-h3:                       21px;
@@ -333,7 +336,7 @@
 }
 
 .view-header-title {
-  font-size: 13.5px;
+  font-size: var(--font-size-header-titles);
   line-height: 28px;
 }
 
@@ -570,17 +573,32 @@
 
 .markdown-embed {
   /*background-color: var(--font-code-back) !important;*/
-  padding: 5px 10px 15px 10px !important;
-  border: 3px solid var(--interface-color-border) !important;
-  border-radius: 6px !important;
+  /*padding: 5px 10px 15px 10px !important;*/
+  padding: 0px !important;
+  border-top: 0px solid var(--interface-color-border) !important;
+  border-bottom: 3px solid var(--interface-color-border) !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
 }
 
-.markdown-embed-title, .file-embed-title {
-  font-size: var(--font-size-h1) !important;
+.markdown-embed-title {
+  font-size: var(--font-size-header-titles) !important;
+  background-color: var(--interface-color-border) !important;
+  border-radius: 3px !important;
+  height: 28px;
+  line-height: 28px;
 }
 
 .markdown-embed-link {
-  color: var(--interface-color-background);
+  top: 5px;
+  color: var(--interface-color-pin);
+}
+
+.markdown-embed-link > svg {
+  width: 17px;
+  height: 17px;
 }
 
 /***************************************/
@@ -593,6 +611,11 @@
   border-left: 2px solid var(--scrollbar-thumb-bg);
   border-top: 2px solid var(--scrollbar-thumb-bg);
   border-bottom: 2px solid var(--scrollbar-thumb-bg);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  color: transparent;
 }
 
 ::-webkit-scrollbar {
