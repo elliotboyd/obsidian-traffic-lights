@@ -736,7 +736,7 @@ pre[class*="language-"] {
 }
 
 code[class*="language-"] {
-  text-shadow: 0 1px black !important;
+  text-shadow: 0 0px black !important;
 }
 
 .markdown-preview-view pre {
