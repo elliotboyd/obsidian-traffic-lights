@@ -50,8 +50,8 @@
   --font-size-h6:                       18px;
   --font-a:                             #fad334;
   --font-a-hover:                       #ffefba;
-  --font-code:                          var(--interface-color-foreground-alt);
-  --font-code-back:                     var(--interface-color-background);
+  --font-code:                          var(--font-color-text-normal);
+  --font-code-back:                     #c1c1c1;
   --font-selection:                     rgba(207, 217, 222, 0.70);
   --text-highlight-bg:                  rgba(207, 217, 222, 0.70);
   --font-weight-normal:                 400;
