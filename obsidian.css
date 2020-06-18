@@ -50,8 +50,8 @@
   --font-size-h4:                       20px;
   --font-size-h5:                       19px;
   --font-size-h6:                       18px;
-  --font-a:                             #fad334;
-  --font-a-hover:                       #ffefba;
+  --font-a:                             #fad334; /*fad334*/ /*#D06069*/
+  --font-a-hover:                       #ffefba; /*ffefba*/ /*#f3a2a9*/
   --font-code:                          var(--font-color-text-normal);
   --font-code-back:                     #c1c1c1;
   --font-selection:                     rgba(207, 217, 222, 0.70);
@@ -642,11 +642,13 @@
 }
 
 .nav-header {
+  height: 28px;
   padding: 0px 0px 0px 0px;
 }
 
 .nav-buttons-container {
-  padding: 4px 0px 4px 0px;
+  height: 28px;
+  padding: 2px 0px 2px 0px;
   margin-bottom: 1px;
   background-color: var(--interface-color-border)
 }
@@ -690,6 +692,16 @@ input[type="number"]:focus {
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: var(--interface-color-foreground-alt);
   font-size: var(--font-size-side);
+}
+
+.search-input{
+  margin: 0;
+  width: 100%;
+  height: 28px !important;
+  border: 0px !important;
+  border-radius: 0px !important;
+  background-color: var(--interface-color-border) !important; 
+  padding: 10px 14px !important;
 }
 
 /***************************************/
@@ -993,15 +1005,14 @@ a:hover,
 .mod-root.workspace-split.mod-vertical { 
   overflow-x:auto; 
   --header-width: 28px;
-  top: 0px;
+  top: 10px;
 }
 .mod-root .view-content {
   height: 100%; 
 }
 
 .mod-root.workspace-split.mod-vertical > div { 
-  min-width: calc(700px + var(--header-width));
-
+  min-width: calc(100% + var(--header-width));
   position:sticky;
   left:0;
 }
@@ -1068,7 +1079,7 @@ a:hover,
 .workspace-fake-target-overlay {
   background-color: var(--background-primary);
 }
-
+*/
 
 /* _focus_mode                         */
 /*-------------------------------------*/
