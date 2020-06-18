@@ -735,7 +735,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 }
 
 .markdown-source-view.is-readable-line-width .CodeMirror {
-  padding: 0px !important;
+  padding: 0px 0px 15px 0px !important;
 }
 
 .markdown-preview-view {
